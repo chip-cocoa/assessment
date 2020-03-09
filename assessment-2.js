@@ -41,7 +41,7 @@ assessmentButton.onclick = () => {
     anchor.setAttribute('href', hrefValue);
     anchor.className = 'twitter-hashtag-button';
     anchor.setAttribute('data-text', assessment ( userName ));
-    anchor.innerText = 'Tweet #あなたのいいところ';
+    anchor.innerText = `Tweet # ${encodeURIComponent('あなたのいいところ')}`;
 
     tweetDivided.appendChild(anchor);
 
